@@ -14,8 +14,8 @@ Before using this script, make sure you have the following:
 1. Clone this repository:
 
    ```bash
-   git clone git@github.com:YgorSansone/docevent-script.git
-   cd docevent-script
+   git clone git@github.com:YgorSansone/docevent.git
+   cd docevent
    
 2. Install the required Python packages by running the following command:
 
