@@ -114,7 +114,7 @@ class UserLogAnalyzer:
 
 def main():
     load_dotenv()
-    authorization = os.getenv("JIRA_COOKIE")
+    authorization = os.getenv("AUTH")
 
     for env in APIWrapper(authorization).env:
         user_data = APIWrapper(authorization).get_users(env)
