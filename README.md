@@ -40,3 +40,19 @@ Before using this script, make sure you have the following:
     ```bash
     python script.py
     ```
+
+    Delete users:
+    
+     ```bash
+    python delete_script.py
+    ```
+
+5. Deleting Unused Accounts
+
+   If you need to delete unused user accounts in the specified environment, you can use the `delete_script.py` provided in this repository. This script uses the same authorization token as the main script (`script.py`) and allows you to specify a list of usernames to delete.
+
+   To use the `delete_script.py`, follow the instructions in the [Usage](#usage) section of the main script README. Be sure to replace `"AUTH"` with your actual authorization token and customize the `user_list` and `environment` accordingly.
+
+   When you run the `delete_script.py`, it will delete the specified user accounts and save information about which users were deleted and when they were deleted in a CSV file named after the environment (e.g., `edisb_deleted_users.csv`).
+
+   Please use the deletion script with caution, as it permanently deletes the specified user accounts.
