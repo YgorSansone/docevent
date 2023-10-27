@@ -95,7 +95,7 @@ class UserLogAnalyzer:
         current_date = datetime.now(timezone.utc)
         date_difference = (current_date - created).days
         is_greater_than_x_days = date_difference > 30 if env == "edi" else date_difference > 15
-        field_name = f'is_greater_than_{is_greater_than_x_days}_days' if env == "edi" else 'is_greater_than_15_days'
+        field_name = f'is_greater_than_30_days' if env == "edi" else 'is_greater_than_15_days'
 
         user_data = {
             'created': created,
